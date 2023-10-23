@@ -1,17 +1,15 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
         VariousMenu variousMenu = new VariousMenu();
-        Order order = new Order();
 
         ArrayList<Order> orderList = new ArrayList<>();
         ArrayList<Order> TodayOrder = new ArrayList<>();
         ArrayList<Double> totalPrice = new ArrayList<>();
         double[] CurrentTotal = {0.0};
 
-        int waiting[] = {0};
+        int[] waiting = {0};
 
 
         while(true){
@@ -30,6 +28,9 @@ public class Main {
             }
             else if(selectMenu == 0){
                 variousMenu.secretMenu(TodayOrder, CurrentTotal);
+            }
+            else if(selectMenu == 99){
+                break;
             }
         }
     }

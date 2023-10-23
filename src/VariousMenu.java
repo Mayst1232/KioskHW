@@ -5,7 +5,6 @@ public class VariousMenu {
     Product product = new Product();
     Scanner sc = new Scanner(System.in);
 
-    Order order = new Order();
     public int MainMenu(){
         System.out.println("\"SHAKESHACK BURGER 에 오신걸 환영합니다.\"");
         System.out.println("아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.");
@@ -188,6 +187,8 @@ public class VariousMenu {
             System.out.println(TodayOrder.get(i).getSelectMenu() + "\t" + "| " + TodayOrder.get(i).getSelectOption() + " | "
             + TodayOrder.get(i).getSelectPrice());
         }
+
+        CurrentTotal[0] = Math.round(CurrentTotal[0] * 100)/100.0;
 
         System.out.println("------------------------------------");
         System.out.println("현재까지 총 판매된 금액은 [ " + CurrentTotal[0] + " ]원 입니다.");

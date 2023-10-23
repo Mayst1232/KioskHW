@@ -20,9 +20,6 @@ public class Order {
         this.selectExplain = explain;
     }
 
-    public String getSelectExplain() {
-        return this.selectExplain;
-    }
 
     public void setSelectPrice(double price) {
         this.selectPrice = price;
